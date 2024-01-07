@@ -3,7 +3,7 @@ import { View, Text, FlatList, TouchableOpacity, StyleSheet, Animated } from 're
 
 const categories = [
   { id: 1, name: 'Crops', color: 'orange' },
-  { id: 2, name: 'Fruits', color: 'lightgreen' },
+  { id: 2, name: 'Fruits', color: '#4CAF50' },
   { id: 3, name: 'Dairy Products', color: 'lightblue' },
   // Add more categories as needed
 ];

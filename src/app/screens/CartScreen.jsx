@@ -176,7 +176,37 @@ const CartScreen = ({navigation}) => {
     </View>
   );
   
-      
+     const handlePayment = () => {
+ 
+      var options = {
+        description: 'Credits towards consultation',
+        image: 'https://i.imgur.com/3g7nmJC.jpg',
+        currency: 'INR',
+        key: 'rzp_test_MTii2pjxumPAbE',
+        amount:calculateTotal().toFixed(2)*100,
+        // amount:1000, // Replace with the actual amount in paise
+        name: 'Krishi Mandi',
+        // order_id: 'order_NGUbZHsmizyi8U',//Replace this with an order_id created using Orders API.
+        prefill: {
+          email: 'chaudhary.sonendra@gmail.com',
+          contact: '9369318609',
+          name: 'Ekarigari system private limited'
+        },
+        theme: {color: '#53a20e'}
+      }
+      RazorpayCheckout.open(options).then((data) => {
+        // handle success
+        // alert(`Success: ${data.razorpay_payment_id}`);
+        navigation.navigate("Orders", {
+          orderNumber: '123456',
+          date: new Date(),
+          totalAmount: calculateTotal().toFixed(2),
+        });
+      }).catch((error) => {
+        // handle failure
+        alert(`Error: ${error.code} | ${error.description}`);
+      });
+     } 
 
   return (
     <View style={styles.container}>
@@ -251,10 +281,10 @@ const CartScreen = ({navigation}) => {
         <Text>Total Amount: ₹{calculateTotal().toFixed(2)}</Text>
       </View>
 
-      <TouchableOpacity style={styles.checkoutButton}>
+      <TouchableOpacity style={styles.checkoutButton} onPress={()=>{handlePayment()}}>
         <Text style={styles.checkoutButtonText}>Proceed to Checkout</Text>
       </TouchableOpacity>
-      <Button
+      {/* <Button
             title={'Pay with Razorpay'}
             onPress={() => {
               var options = {
@@ -283,29 +313,8 @@ const CartScreen = ({navigation}) => {
             }}
           />
           <Button   title={'Pay with Razorpay'} onPress={() => {
-    var options = {
-    description: 'Credits towards consultation',
-    image: 'https://i.imgur.com/3g7nmJC.jpg',
-    currency: 'INR',
-    key: 'rzp_test_MTii2pjxumPAbE',
-    amount: '5000000',
-    name: 'Acme Corp',
-    order_id: 'order_NGUbZHsmizyi8U',//Replace this with an order_id created using Orders API.
-    prefill: {
-      email: 'chaudhary.sonendra@gmail.com',
-      contact: '9369318609',
-      name: 'Ekarigari system private limited'
-    },
-    theme: {color: '#53a20e'}
-  }
-  RazorpayCheckout.open(options).then((data) => {
-    // handle success
-    alert(`Success: ${data.razorpay_payment_id}`);
-  }).catch((error) => {
-    // handle failure
-    alert(`Error: ${error.code} | ${error.description}`);
-  });
-}}></Button>
+ 
+}}></Button> */}
     </View>
   );
 };
@@ -411,7 +420,7 @@ const styles = StyleSheet.create({
     marginBottom: 6,
   },
   checkoutButton: {
-    backgroundColor: 'lightgreen', // Red color (you can change it to your preferred color)
+    backgroundColor: '#4CAF50', // Red color (you can change it to your preferred color)
     borderRadius: 12,
     padding: 16,
     alignItems: 'center',

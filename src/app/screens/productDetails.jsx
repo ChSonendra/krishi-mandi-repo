@@ -89,8 +89,8 @@ const styles = StyleSheet.create({
   },
   buyButton: {
     margin: 16,
-    color:'lightgreen',
-    backgroundColor:'lightgreen'
+    color:'#4CAF50',
+    backgroundColor:'#4CAF50'
   },
 });
 

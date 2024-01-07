@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: 16,
     paddingVertical: 16, // Increased header height
-    backgroundColor: 'lightgreen',
+    backgroundColor: '#4CAF50',
   },
   logo: {
     width: 80,

@@ -21,6 +21,7 @@ import ProfileScreen from '../screens/profile';
 import AddAddressScreen from '../screens/addAddress';
 import ProductDetails from '../screens/productDetails';
 import FarmerStack from './drawerNavigator';
+import OrderConfirmedScreen from '../screens/orders';
 
 
 const Stack = createStackNavigator();
@@ -92,6 +93,8 @@ const MainNavigator = () => (
     <Drawer.Screen name="Address" component={AddAddressScreen} />
     <Drawer.Screen name="Settings" component={ProductListingPage} />
     <Drawer.Screen name="Product" component={ProductDetails} />
+    <Drawer.Screen name="Orders" component={OrderConfirmedScreen} />
+
 
 
     {/* Add more screens to Drawer Navigator as needed */}
