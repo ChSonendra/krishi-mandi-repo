@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.krishimandiapp-merged_res-47:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.krishimandiapp-main-49:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.krishimandiapp-merged_res-47:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.krishimandiapp-main-49:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.krishimandiapp-merged_res-47:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.krishimandiapp-main-49:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.krishimandiapp-merged_res-47:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.krishimandiapp-main-49:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.krishimandiapp-merged_res-47:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.krishimandiapp-main-49:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.krishimandiapp-merged_res-47:/drawable_rn_edit_text_material.xml.flat",
+        "source": "com.krishimandiapp-main-49:/drawable/rn_edit_text_material.xml"
+    }
+]

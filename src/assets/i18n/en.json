@@ -1,0 +1,32 @@
+{
+  "home": {
+    "SIGNIN": "Sign-in",
+    "SSI": "SSI WALLET",
+    "HOME": "By Signing up you agree to the Terms and Condition.",
+    "HOME_characters": "chacters",
+    "ABOUT_us": "About Us",
+    "ABOUT_theApp": "About the app",
+    "ABOUT_theCreators": "About the Creators",
+    "ABOUT_theAppDesc": "About the app",
+    "ABOUT_theCreatorsDesc": "About the Creators",
+    "SIGNUP": "Sign-up"
+  },
+  "sign": {
+    "SIGN": "SIGN-UP",
+    "text": "Please Create Pin to sign-up."
+  },
+  "dash": {
+    "My": "My Credentials",
+    "wallet":"Events",
+    "wallets":"Contacts",
+    "Myheader":"You have items in your Digital Wallet.",
+    "Mysub":"To add more credentials to your wallet click on the Wallet button."
+  },
+  "t": {
+    "InitAgent": "Initializing agent .."
+  },
+  "screen":{
+"screen1":"What Are SSI Digital Wallets?",
+"screen2":""
+  }
+}
